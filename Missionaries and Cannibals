@@ -1,0 +1,12 @@
+print("Left Side: 3M 3C")
+print("Boat moves 2C")
+print("Boat moves 1C back")
+print("Boat moves 2M")
+print("Goal Reached")
+
+#output
+Left Side: 3M 3C
+Boat moves 2C
+Boat moves 1C back
+Boat moves 2M
+Goal Reached
