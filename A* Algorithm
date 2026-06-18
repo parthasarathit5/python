@@ -1,0 +1,27 @@
+graph = {
+'A':[('B',1),('C',3)],
+'B':[('D',3)],
+'C':[('D',1)],
+'D':[]
+}
+
+heuristic = {'A':4,'B':2,'C':1,'D':0}
+
+open = [('A',0)]
+
+while open:
+    open.sort(key=lambda x:x[1]+heuristic[x[0]])
+    node,cost = open.pop(0)
+
+    print(node)
+
+    if node=='D':
+        break
+
+    for neigh,w in graph[node]:
+        open.append((neigh,cost+w))
+
+#output
+A
+C
+D
