@@ -1,0 +1,11 @@
+states = ['A','B','C']
+colors = ['Red','Green','Blue']
+
+solution = {}
+
+for s in states:
+    for c in colors:
+        solution[s] = c
+        break
+
+print(solution)
