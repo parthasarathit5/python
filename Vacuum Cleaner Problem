@@ -1,0 +1,15 @@
+rooms = {'A':'Dirty','B':'Dirty'}
+position = 'A'
+
+while 'Dirty' in rooms.values():
+    if rooms[position]=='Dirty':
+        print("Cleaning", position)
+        rooms[position]='Clean'
+
+    position='B' if position=='A' else 'A'
+
+print("All rooms clean")
+#output
+Cleaning A
+Cleaning B
+All rooms clean
