@@ -1,0 +1,17 @@
+scores = [3,5,2,9]
+
+def minimax(depth, isMax):
+
+    if depth == 2:
+        return scores.pop(0)
+
+    if isMax:
+        return max(minimax(depth+1,False),
+                   minimax(depth+1,False))
+    else:
+        return min(minimax(depth+1,True),
+                   minimax(depth+1,True))
+
+print(minimax(0,True))
+#Output
+5
