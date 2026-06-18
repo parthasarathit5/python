@@ -1,0 +1,12 @@
+board = [' ']*9
+
+def show():
+    print(board[0],board[1],board[2])
+
+board[0]='X'
+board[4]='O'
+board[1]='X'
+
+show()
+#output
+X X
