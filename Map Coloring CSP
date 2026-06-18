@@ -9,3 +9,6 @@ for s in states:
         break
 
 print(solution)
+
+#output
+{'A':'Red','B':'Red','C':'Red'}
